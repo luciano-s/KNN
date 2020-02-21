@@ -1,0 +1,3 @@
+This is a first approach to the K-nearest neighbors algorithms. The KNN is a simple algorithm but powerfull. A subset of the MNIST dataset is used (8500 images). This dataset was provided by UC San Diego X machine learning course, on edX. My goal is to learn how a machine learning algorithm works in it's essence, without an API to help me (but at the same time hide me) on that task.
+
+External libraries required: numpy and matplotlib
