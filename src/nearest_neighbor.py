@@ -31,7 +31,7 @@ def KNN(x, x_train, y_train, K=1):
     """Returns the position of KNN guess for the handwritten digit"""
 
     print("Running. . .")
-
+    
     neighbors = []
     if K == 1:
         distances = [distance(x, x_train[i]) for i in range(0, len(x_train))]
