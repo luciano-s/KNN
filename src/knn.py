@@ -15,13 +15,7 @@ class KNN:
         self.classes = y_train[:]
         self.function = lambda x,y: np.sum( [(x[i]-y[i])**2 
             for i in range(0, len(x))] )**(1/2)
-        # self.fill_memory(x_train, y_train)
-
-
-    # def fill_memory(self, X, Y):
         
-    #     for i in range(len(X)):
-    #         self.memory[str(X[i])] = Y[i]
 
     def set_distance_fuction(self, function):
         self.function = function
@@ -52,8 +46,7 @@ class KNN:
                 
                 self.neighbors.append( (values[0][1], values[0][2]) )
 
-        # print(self.neighbors[0])    
-        # (index,  array)
+  
         
         
         c = Counter([items[0] for items in self.neighbors])
